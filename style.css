@@ -3,6 +3,9 @@
 body{
     background-image: url('assets/bg-pattern-top-desktop.svg'), url('assets/bg-pattern-bottom-desktop.svg');
   background-repeat: no-repeat, no-repeat;
+  background-position: left top, right;
+  height: 100vh;
+
 
  
   background-color: rgb(219, 206, 206);
