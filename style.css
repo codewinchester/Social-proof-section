@@ -1,11 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+:root{
+  --clr-Very-Dark-Magenta: hsl(300, 43%, 22%);
+  --clr-Soft-Pink: hsl(333, 80%, 67%);
+
+  --clr-Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+  --clr-Light-Grayish-Magenta: hsl(300, 24%, 96%);
+  --clr-White: hsl(0, 0%, 100%);
+
+  --ff-card-component:"League Spartan", sans-serif;
+
+  --fs-body:0.9375rem;
+  --fs-title:2.5rem;
+
+  --fw-regular:400;
+  --fw-medium:600;
+  --fw-bold:700;
+}
 
 body{
+  font-family: var(--ff-card-component);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-regular);
   background-image: url('assets/bg-pattern-top-desktop.svg'), url('assets/bg-pattern-bottom-desktop.svg');
   background-repeat: no-repeat, no-repeat;
   background-position: left top, right;
   height: 100vh;
-  background-color: rgb(219, 206, 206);
+  background-color: var(--clr-White);
 }
 
-  /*background-position: 10px 20px, 20px 10px;
+.top-part-parent-container{
+  margin:3em 2em;
+  padding: 2em 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading-description{
+  width: 35%;
+  max-width: 600px;
+  margin-left: 8em;
+  padding: 1em 1em;
+}
+
+.heading-description h1{
+  font-size: var(--fs-title);
+  color: var(--clr-Very-Dark-Magenta);
+  width: 80%;
+}
+
+.heading-description p{
+  color: var(--clr-Dark-Grayish-Magenta);
+  font-weight: var(--fw-medium);
+  width: 90%;
+  line-height: 1.4;
+}
+/*background-position: 10px 20px, 20px 10px;
