@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 :root{
     --clr-very-dark-magenta:hsl(300, 43%, 22%);
     --clr-soft-pink:hsl(333, 80%, 67%);
@@ -21,4 +25,119 @@ body{
     font-family: var(--font-f);
     font-size: var(--fs-body);
     font-weight: var(--fw-regular);
+    background: url("assets/bg-pattern-top-desktop.svg") left top / auto no-repeat,
+                        url("assets/bg-pattern-bottom-desktop.svg") right bottom / auto no-repeat,
+                      var(--clr-white);
+    height: 100vh;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonials{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+   
+}
+.Colton , .Anne , .Irene{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-very-dark-magenta);
+    color: var(--clr-white);
+    border-radius: 10px;
+    padding: var(--fs-body);
+    gap: 20px;
+    padding: 40px;
+    width: 350px;
+   
+}
+.text{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+span p:nth-last-child(1){
+    color: var(--clr-soft-pink);
+    font-weight: var(--fw-bold);
+}
+img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.testimonials > div:nth-child(2) {
+    transform: translateY(15px);
+}
+
+.testimonials > div:nth-child(3) {
+    transform: translateY(30px);
 }
