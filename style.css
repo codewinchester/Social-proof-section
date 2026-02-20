@@ -38,7 +38,6 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid red;
 }
 
 .heading-paragraph-container{
@@ -60,13 +59,14 @@ body{
     color: var(--clr-dark-grayish-magenta);
     font-weight: var(--fw-medium);
     line-height: 1.5;
+    margin-top: 1.5em;
 }
 
 .ratings-container{
     padding: 1em 1em;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
     align-items: flex-start;   
 }
 
@@ -75,12 +75,16 @@ body{
     font-weight: var(--fw-bold);
 }
 
+.stars{
+    transform: scale(0.5);
+}
+
 .rating-star-box{
-    padding: .5em 1.2em;
+    padding: .5em 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 24px;
+    gap: 0px;
     background-color: var(--clr-light-grayish-magenta);
     border-radius: 8px;
 }
@@ -100,10 +104,15 @@ body{
     display: flex;
     gap: 40px;
     padding: 20px;
-    border:solid black 2px;
     margin-top: 20px;
    
 }
+
+.testimonials p{
+    line-height: 1.4;
+}
+
+
 .Colton , .Anne , .Irene{
     display: flex;
     flex-direction: column;
@@ -122,9 +131,11 @@ body{
     gap: 20px;
     align-items: center;
 }
+
+
 span p:nth-last-child(1){
     color: var(--clr-soft-pink);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-regular);
 }
 img{
     width: 40px;
@@ -142,5 +153,87 @@ img{
 
 
 
+/*Media queries*/
+@media (min-width: 900px) and (max-width: 1155px) {
+
+    .heading-paragraph-container h1{
+        width: 100%;
+    }
+
+    .heading-paragraph-container p {
+        width: 100%;
+    }
+
+    .rating-star-box:nth-child(2) {
+        width: 100%;
+    }
+
+    .rating-star-box:nth-child(3) {
+       width: 100%;
+    }   
+
+}
 
 
+@media (min-width: 375px) and (max-width: 899px) {
+    body{
+        margin: 0 auto;
+    }
+    .top-section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading-paragraph-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading-paragraph-container h1{
+        width: 80%;
+    }
+
+    .heading-paragraph-container p{
+        width: 80%;
+    }
+
+    .rating-star-box:nth-child(2) {
+            margin-left: 0px;
+    }
+    
+    .rating-star-box:nth-child(3) {
+            margin-left: 0px;
+    }
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 497px) {
+    .ratings-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+        .rating-star-box{
+            display: flex;
+            flex-direction: column;
+            padding: 2em 1em;
+        }
+
+        .Colton, .Anne,.Irene{
+            width: 80%;
+            ma
+        }
+}
