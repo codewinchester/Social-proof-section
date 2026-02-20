@@ -219,20 +219,29 @@ img{
 }
 
 @media (min-width: 375px) and (max-width: 497px) {
+
+    .heading-paragraph-container h1 {
+        width: 100%;
+    }
+    
+    .heading-paragraph-container p {
+        width: 100%;
+    }
+
     .ratings-container{
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       }
+    }
         .rating-star-box{
-            display: flex;
-            flex-direction: column;
-            padding: 2em 1em;
-        }
+        display: flex;
+        flex-direction: column;
+        padding: 2em 1em;
+    }
 
-        .Colton, .Anne,.Irene{
-            width: 80%;
-        }
+    .Colton, .Anne,.Irene{
+        width: 95%;
+    }
 }
